@@ -30,7 +30,10 @@
           We support manufacturers with practical compliance guidance for market access,
           documentation, and regulatory readiness across Europe and the United Kingdom.
         </p>
-        <a class="button" href="#services">View Services</a>
+        <div class="hero-actions">
+          <a class="button" href="#contact">Get a free assessment</a>
+          <a class="button button-secondary" href="#services">View Services</a>
+        </div>
       </section>
     </div>
   </header>
@@ -89,15 +92,65 @@
           <p class="section-text">
             If you need support with EU or UK compliance requirements, we are ready to help.
           </p>
+          <div class="contact-details">
+            <p><strong>Email:</strong> renee@fangshi.tw</p>
+            <p><strong>Phone:</strong> +44 20 1234 5678</p>
+            <p><strong>Location:</strong> London, United Kingdom</p>
+          </div>
         </div>
 
-        <div class="contact-details">
-          <p><strong>Email:</strong> renee@fangshi.tw</p>
-          <p><strong>Phone:</strong> +44 20 1234 5678</p>
-          <p><strong>Location:</strong> London, United Kingdom</p>
-        </div>
+        <form class="contact-form">
+          <div class="form-grid">
+            <label class="field">
+              <span>Full name</span>
+              <input type="text" name="full_name" placeholder="Your name">
+            </label>
+
+            <label class="field">
+              <span>Company name</span>
+              <input type="text" name="company_name" placeholder="Your company">
+            </label>
+
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="name@company.com">
+            </label>
+
+            <label class="field">
+              <span>Product type</span>
+              <input type="text" name="product_type" placeholder="e.g. electrical equipment">
+            </label>
+
+            <label class="field">
+              <span>Target market</span>
+              <select name="target_market">
+                <option value="">Select one</option>
+                <option value="EU">EU</option>
+                <option value="UK">UK</option>
+                <option value="EU & UK">EU & UK</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>Support needed</span>
+              <select name="support_needed">
+                <option value="">Select one</option>
+                <option value="Regulatory assessment">Regulatory assessment</option>
+                <option value="Technical documentation">Technical documentation</option>
+                <option value="Market access guidance">Market access guidance</option>
+              </select>
+            </label>
+          </div>
+
+          <label class="field">
+            <span>Brief description of your needs</span>
+            <textarea name="message" rows="5" placeholder="Tell us about your product and compliance needs"></textarea>
+          </label>
+
+          <button class="button" type="submit">Submit request</button>
+        </form>
       </div>
     </section>
   </main>
-</body>
+ </body>
 </html>

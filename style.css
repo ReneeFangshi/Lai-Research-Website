@@ -144,9 +144,15 @@ h3 {
   font-size: 1.05rem;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: 1.75rem;
+}
+
 .button {
   display: inline-block;
-  margin-top: 1.75rem;
   padding: 0.9rem 1.4rem;
   border-radius: 999px;
   background: var(--accent);
@@ -158,6 +164,16 @@ h3 {
 .button:hover {
   background: var(--accent-dark);
   transform: translateY(-1px);
+}
+
+.button-secondary {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.button-secondary:hover {
+  background: rgba(255, 255, 255, 0.9);
 }
 
 .section {
@@ -204,6 +220,7 @@ h3 {
 }
 
 .contact-details {
+  margin-top: 1.75rem;
   padding: 1.5rem;
   border-radius: 20px;
   background: var(--surface-soft);
@@ -211,6 +228,55 @@ h3 {
 
 .contact-details p + p {
   margin-top: 0.85rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.75rem;
+  border-radius: 20px;
+  background: var(--surface-soft);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.field span {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 1px solid rgba(24, 48, 40, 0.14);
+  border-radius: 14px;
+  background: #fff;
+  color: var(--text);
+  font: inherit;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: #7a8b85;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 140px;
 }
 
 @media (max-width: 800px) {
@@ -221,6 +287,7 @@ h3 {
 
   .grid-two,
   .cards,
+  .form-grid,
   .contact-box {
     grid-template-columns: 1fr;
   }
